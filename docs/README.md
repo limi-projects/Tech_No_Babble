@@ -1,8 +1,13 @@
-# Interesting Stuff
+# Welcome 
 
-## Welcome. Please see the contents below.
+This is a repository of interesting and useful bits of information that I've picked up over the years.
 
-- [Chemistry](blank)
-- [Physics](blank)
-- [Mathematics](blank)
+The emphasis is on plain english communication with as little technical jargon as possible.
+
+Navigate through the contents via the below links. 
+
+- [Chemistry](chemistry)
+- [Physics](physics)
+- [Mathematics](mathematics)
 - [Computing](computing)
+- [Law](law)
