@@ -7,7 +7,9 @@ The emphasis is on plain English communication with as little technical jargon a
 Navigate through the contents via the below links. 
 
 ## Physical Sciences
+
 ### [Chemistry](chemistry) | [Computing](computing) | [Mathematics](mathematics) | [Physics](physics)
 
 ## Other Interests
+
 ### [History](history) | [Law](law) 
