@@ -1,4 +1,4 @@
-# Contents
+# Computing
 
 ## [Computing Concepts](computing_concepts/README.md)
 
