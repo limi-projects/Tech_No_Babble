@@ -1,11 +1,8 @@
-# Python
-Personal ```Python``` portfolio.  
+# Python 
 
-## The ```knowledge``` folder
-Notes on ```Python``` programming concepts.
+## [Concepts](concepts/README.md)
 
-## The ```projects``` folder
-Source code for ```Python``` projects.
+## [Projects](projects/README.md)
 
 ## References 
 - *Python Crash Course - A Hands-On, Project-Based Introduction to Programming* by *Eric Matthes* (ISBN-10: 1-59327-928-0).
