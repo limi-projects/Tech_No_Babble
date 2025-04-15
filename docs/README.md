@@ -13,3 +13,5 @@ Navigate through the contents via the below links.
 ## Other Interests
 
 ### [History](history) | [Law](law) 
+
+[Home]()
