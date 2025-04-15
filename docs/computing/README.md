@@ -1,6 +1,6 @@
 # Computing
 
-## [Computing Concepts](computing_concepts/README.md)
+## [Concepts](computing_concepts/README.md)
 
 ## [Python](python/README.md)
 
