@@ -1,6 +1,6 @@
 # Welcome 
 
-This is a repository of interesting and useful bits of information that I've picked up over the years.
+This is a repository of useful bits of information that I've picked up over the years.
 
 The emphasis is on plain English communication with as little technical jargon as possible.
 
