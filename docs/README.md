@@ -14,4 +14,4 @@ Navigate through the contents via the below links.
 
 ### [History](history) | [Law](law) 
 
-[Home]()
+[Home](https://github.com/limi-projects/Interesting_Stuff/blob/main/docs/README.md)
