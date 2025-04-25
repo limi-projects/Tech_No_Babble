@@ -1,6 +1,12 @@
 # Python 
 
-## [Concepts](concepts/README.md)
+## [Classes](classes.md)
+
+## [Commenting](comments.md)
+
+## [Conditionals Statements](conditionals.md)
+
+## [Data Types](data_types.md)
 
 ## [Projects](projects/README.md)
 
