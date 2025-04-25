@@ -7,4 +7,4 @@
 - Move concepts to a separate section
 - Add C++ section.
 
-#### [Home](./README.md)
+#### [Home](../README.md)
