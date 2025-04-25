@@ -6,10 +6,7 @@ Use ```#``` to add single-line comments.
 # This is a comment.
 print("Bla, Bla, Bla.")
 ```
-Outputs
-```
-Bla, Bla, Bla.
-```
+> Bla, Bla, Bla.
 
 ## Docstrings
 Use ```""" """``` to add documentation strings (docstrings).
@@ -27,12 +24,9 @@ def some_fn():
 
 print(some_fn.__doc__)
 ```
-Outputs
-```
-What the function does.
-
-    Other noteworthy comments about the function.
-```
+> What the function does.\
+> \
+>    Other noteworthy comments about the function.
 
 ## Annotations
 These allow you to specify the function's input/output data types.
@@ -42,9 +36,6 @@ def some_fn(param1 : str, param2 : int) -> float:
 
 print(some_fn.__annotations__)
 ```
-Outputs
-```
-{'param1': <class 'str'>, 'param2': <class 'int'>, 'return': <class 'float'>}
-```
+> {'param1': <class 'str'>, 'param2': <class 'int'>, 'return': <class 'float'>}
 
 #### Back to [Python](./README.md) | [Computing](../README.md) | [Home](../../README.md)
