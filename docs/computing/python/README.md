@@ -24,8 +24,6 @@
 
 ## [Modules](modules.md)
 
-## [Regular expressions](regexs.md)
-
 ## [Testing](testing.md)
 
 ## [User input](user_input.md)
@@ -39,5 +37,6 @@
 - Helper functions.
 - Decorators
 - Machine Learning
+- Regular Expressions
 
 #### Back to [Computing](../README.md) | [Home](../../README.md) 
