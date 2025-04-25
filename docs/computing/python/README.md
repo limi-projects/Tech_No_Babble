@@ -29,5 +29,6 @@
 - Regular Expressions.
 - Split data types into multiple pages.
 - Organise the above pages into table sections.
+- Add page navigation to all files.
 
 #### Back to [Computing](../README.md) | [Home](../../README.md) 
