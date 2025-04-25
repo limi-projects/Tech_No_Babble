@@ -4,7 +4,7 @@
 
 ## [Commenting](comments.md)
 
-## [Conditionals Statements](conditionals.md)
+## [Conditional Statements](conditionals.md)
 
 ## [Data Types](data_types.md)
 
