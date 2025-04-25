@@ -40,4 +40,4 @@
 - Decorators
 - Machine Learning
 
-#### Back to [Python](../README.md) | [Home](../README.md) 
+#### Back to [Computing](../README.md) | [Home](../README.md) 
