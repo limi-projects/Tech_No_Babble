@@ -196,4 +196,4 @@ print(H.electrons.electrons)
 print(H.electrons.elec_strt())
 ```
 
-#### Back to [Python](../README.md) | [Computing](../../README.md) | [Home](../../../README.md)
+#### Back to [Python](./README.md) | [Computing](../README.md) | [Home](../../README.md)
