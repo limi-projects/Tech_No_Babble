@@ -16,8 +16,6 @@
 
 ## [Guidelines](guidelines.md)
 
-## [Helper functions](helpers.md)
-
 ## [Loops](loops.md)
 
 ## [Mathematics](mathematics.md)
@@ -36,3 +34,8 @@
 
 ## References 
 - *Python Crash Course - A Hands-On, Project-Based Introduction to Programming* by *Eric Matthes* (ISBN-10: 1-59327-928-0).
+
+### To Do
+- Helper functions.
+- Decorators
+- Machine Learning
