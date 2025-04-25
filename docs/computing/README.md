@@ -3,7 +3,7 @@
 ## Programming
 ## [Python](python/README.md)
 
-### To Do
+### Coming Soon
 - Move concepts to a separate section
 - Add C++ section.
 
