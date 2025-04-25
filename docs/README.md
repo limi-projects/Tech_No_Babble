@@ -4,14 +4,11 @@ This is a repository of useful bits of information that I've picked up over the 
 
 The emphasis is on plain English communication with as little technical jargon as possible.
 
-Navigate through the contents via the below links. 
+You can navigate through the contents through the links below. 
 
 ## Physical Sciences
 
-### [Chemistry](chemistry) | [Computing](computing) | [Mathematics](mathematics) | [Physics](physics)
+### [Chemistry](chemistry) | [Computing](computing) | [History](history) | [Law](law) | [Mathematics](mathematics) | [Physics](physics)
 
-## Other Interests
-
-### [History](history) | [Law](law) 
 
 #### [Home](./README.md) 
