@@ -1,9 +1,10 @@
 # Computing
 
-## [Concepts](computing_concepts/README.md)
-
+## Programming
 ## [Python](python/README.md)
 
-## [C++](cpp/README.md)
+### To Do
+- Move concepts to a separate section
+- Add C++ section.
 
 #### [Home](./README.md)
