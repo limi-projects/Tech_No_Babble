@@ -68,3 +68,33 @@ x**3 + 3*x**2*y + 3*x*y**2 + y**3
  3      2        2    3 
 x  + 3⋅x ⋅y + 3⋅x⋅y  + y 
 ```
+
+### Series Expansions
+```python
+from sympy import Symbol, pprint, init_printing
+
+def print_series(n : int) -> str:
+    ''' Print a series expansion up to n.
+
+    1. Ensure the successive terms are printed in ascending powers of x.
+    2. Create a first term, then redefine by addin successive terms.
+    3. Print the series.
+    '''
+
+    # Print the series in ascending powers of x.
+    init_printing(order='rev-lex')
+
+    x = Symbol('x')
+    series = x
+    for power in range(2, n+1):
+        series = series + (x**power)/power
+    pprint(series)
+
+print_series(int(10))
+```
+```
+     2    3    4    5    6    7    8    9    10
+    x    x    x    x    x    x    x    x    x
+x + ── + ── + ── + ── + ── + ── + ── + ── + ───
+    2    3    4    5    6    7    8    9    10
+```
