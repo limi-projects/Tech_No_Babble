@@ -77,7 +77,7 @@ def print_series(n : int) -> str:
     ''' Print a series expansion up to n.
 
     1. Ensure the successive terms are printed in ascending powers of x.
-    2. Create a first term, then redefine by addin successive terms.
+    2. Create a first term, then redefine by adding successive terms.
     3. Print the series.
     '''
 
@@ -98,3 +98,59 @@ print_series(int(10))
 x + ── + ── + ── + ── + ── + ── + ── + ── + ───
     2    3    4    5    6    7    8    9    10
 ```
+### Substitution
+Once an expression has been created, we can substitute values into the symbols to get solutions.
+```python
+from sympy import symbols
+
+x, y = symbols('x, y')
+equation = x+y
+solution = equation.subs({x:7, y:12})
+print(solution)
+
+solution = equation.subs({x:7, y:x+9})
+print(solution)
+```
+> 19 \
+> x + 16
+
+Note that ```.subs``` takes  dictionary as input, which is very handy.
+```python
+from sympy import symbols
+
+values = {'m': 10, 'a': 5}
+
+m, a = symbols('m, a')
+equation = m*a
+force = equation.subs(values)
+print(force)
+```
+> 50
+
+### Sympification
+A more direct approach to create and interpret expressions involves using ```sympify```.
+```python
+from sympy import sympify
+
+raw = input('Input Equation: ')
+interpretation = sympify(raw)
+print(interpretation)
+```
+```
+Input Equation: x*2+y**2-z**0.5 
+2*x + y**2 - z**0.5
+```
+
+### Solving Equations
+The ```solve``` function may be used to solve equations. Sympy always assumes that the equation equals zero (i.e. ax^2 + bx + c = 0). Note that the solver will account for imaginary results.
+```python
+from sympy import sympify, solve
+
+equation = sympify('x**2 + 5*x + 5')
+print(solve(equation))
+
+equation = sympify('5*x**2 - 3*x + 5')
+print(solve(equation))
+```
+> [-5/2 - sqrt(5)/2, -5/2 + sqrt(5)/2]
+> [3/10 - sqrt(91)*I/10, 3/10 + sqrt(91)*I/10]
