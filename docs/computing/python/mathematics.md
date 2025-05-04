@@ -152,5 +152,5 @@ print(solve(equation))
 equation = sympify('5*x**2 - 3*x + 5')
 print(solve(equation))
 ```
-> [-5/2 - sqrt(5)/2, -5/2 + sqrt(5)/2]
+> [-5/2 - sqrt(5)/2, -5/2 + sqrt(5)/2] \
 > [3/10 - sqrt(91)*I/10, 3/10 + sqrt(91)*I/10]
