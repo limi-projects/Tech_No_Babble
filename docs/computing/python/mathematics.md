@@ -33,13 +33,38 @@ print(img1.imag) # Get imaginary value
 print(img1.conjugate()) # Get complex conjugate
 print(abs(img2)) # Get the magnitude of the complex number
 ```
-> <class 'complex'>
-> (-1+4j)
-> (2-2j)
-> 1.0
-> 1.0
-> (1-1j)
+> <class 'complex'>\
+> (-1+4j)\
+> (2-2j)\
+> 1.0\
+> 1.0\
+> (1-1j)\
 > 3.605551275463989
 
 NB: Cannot use floor division (```//```) or modulus (```%```) operations on complex numbers.
 See ```cmath``` for further complex number operations.
+
+## Symbolic Mathematics
+The ```sympy``` allows for symbolic mathematics operations to be performed.
+```python
+from sympy import Symbol, symbols, factor, expand, pprint
+x = Symbol('x') # For single symbol definitions.
+y = Symbol('y')
+
+a, b, c = symbols('a, b, c') # For multiple symbol definitions.
+print(a*x**2 + a*x**2 +b*x + c - c) # Simplification
+
+factorised_expression = factor(x**2 - y**2) # Factorisation
+print(factorised_expression)
+
+expanded_expression = expand((x+y)**3) # Bracket expansion
+print(expanded_expression)
+pprint(expanded_expression) # Prettier printing
+```
+```
+2*a*x**2 + b*x 
+(x - y)*(x + y) 
+x**3 + 3*x**2*y + 3*x*y**2 + y**3 
+ 3      2        2    3 
+x  + 3⋅x ⋅y + 3⋅x⋅y  + y 
+```
