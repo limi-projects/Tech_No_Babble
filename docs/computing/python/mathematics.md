@@ -154,3 +154,37 @@ print(solve(equation))
 ```
 > [-5/2 - sqrt(5)/2, -5/2 + sqrt(5)/2] \
 > [3/10 - sqrt(91)*I/10, 3/10 + sqrt(91)*I/10]
+
+## Plotting
+You can also plot functions directly using sympy.
+```python
+from sympy.plotting import plot
+from sympy import Symbol
+x = Symbol('x')
+equation = x**2 + 3*x + 5
+plot(equation)
+```
+```
+    140 |
+        |                                                      /
+        |                                                     /
+        |                                                    /
+        |                                                   /
+        |                                                  /
+        |                                                 /
+        |                                                /
+        |                                               /
+        |\                                             /
+     70 |-\-------------------------------------------/---------
+        |  \                                         /
+        |   \                                      ..
+        |    ..                                   /
+        |      \                                 /
+        |       ..                             ..
+        |         ..                         ..
+        |           ..                     ..
+        |             ...               ...
+        |                .....     .....
+      0 |_______________________________________________________
+         -10                        0                          10
+```
