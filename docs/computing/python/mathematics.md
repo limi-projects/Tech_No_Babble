@@ -157,11 +157,27 @@ print(solve(equation))
 
 ### Rearranging Equations
 ```python
-
+from sympy import symbols, solve, pprint
+s, u, a, t = symbols('s, u, a, t')
+equation = u*t + (1/2)*a*(t**2) - s
+solution = solve(equation, t, dict=True)
+pprint(solution)
+solution = solve(equation, a, dict=True)
+pprint(solution)
 ```
 ```
-
+⎡⎧           ______________⎫  ⎧           ______________⎫⎤
+⎢⎪          ╱            2 ⎪  ⎪          ╱            2 ⎪⎥
+⎢⎨   -u - ╲╱  2.0⋅a⋅s + u  ⎬  ⎨   -u + ╲╱  2.0⋅a⋅s + u  ⎬⎥
+⎢⎪t: ──────────────────────⎪, ⎪t: ──────────────────────⎪⎥
+⎣⎩             a           ⎭  ⎩             a           ⎭⎦
+⎡⎧   2.0⋅(s - t⋅u)⎫⎤
+⎢⎪a: ─────────────⎪⎥
+⎢⎨         2      ⎬⎥
+⎢⎪        t       ⎪⎥
+⎣⎩                ⎭⎦
 ```
+NB: The above equations are presented more clearly in the actual terminal output.
 
 ### Plotting
 You can also plot functions directly using sympy.
