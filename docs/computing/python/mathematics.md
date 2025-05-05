@@ -155,7 +155,15 @@ print(solve(equation))
 > [-5/2 - sqrt(5)/2, -5/2 + sqrt(5)/2] \
 > [3/10 - sqrt(91)*I/10, 3/10 + sqrt(91)*I/10]
 
-## Plotting
+### Rearranging Equations
+```python
+
+```
+```
+
+```
+
+### Plotting
 You can also plot functions directly using sympy.
 ```python
 from sympy.plotting import plot
