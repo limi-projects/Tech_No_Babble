@@ -480,17 +480,7 @@ for key in set(characters.keys()):
 > thief
 
 ### Processing Sets
-```python
-s = {1}
-t = {1,2}
-
-print(s.issubset(t)) # To see is one set is a SUBset of another.
-print(s.issuperset(t)) # To see is one set is a SUPERset of another.
-```
-> True
-> False
-
-Further functions can be obtained by using the ```FiniteSet()``` class of ```sympy```
+Sets can be further manipulated using the ```FiniteSet()``` class of ```sympy```
 ```python
 from sympy import FiniteSet
 a = FiniteSet(1,2)
@@ -512,28 +502,26 @@ print(a.intersect(b))
 # Get the cartesian product (all possible triplets) across three sets.
 [print(i) for i in a**3]
 ```
-```
-True
-True
-FiniteSet(EmptySet, {1}, {2}, {1, 2})
-True
-{1, 2, 3}
-{1, 2}
-(1, 1)
-(2, 1)
-(1, 2)
-(2, 2)
-(1, 3)
-(2, 3)
-(1, 1, 1)
-(2, 1, 1)
-(1, 2, 1)
-(2, 2, 1)
-(1, 1, 2)
-(2, 1, 2)
-(1, 2, 2)
-(2, 2, 2)
-```
+> True\
+> True\
+> FiniteSet(EmptySet, {1}, {2}, {1, 2})\
+> True\
+> {1, 2, 3}\
+> {1, 2}\
+> (1, 1)\
+> (2, 1)\
+> (1, 2)\
+> (2, 2)\
+> (1, 3)\
+> (2, 3)\
+> (1, 1, 1)\
+> (2, 1, 1)\
+> (1, 2, 1)\
+> (2, 2, 1)\
+> (1, 1, 2)\
+> (2, 1, 2)\
+> (1, 2, 2)\
+> (2, 2, 2)
 
 ## Dictionaries
 Instead of numeric indexes (like lists), dictionaries use _"keys"_ to manage _"values"_.
