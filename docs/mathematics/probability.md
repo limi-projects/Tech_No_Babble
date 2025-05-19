@@ -9,9 +9,24 @@
 - Uniform distribution: Each outcome in the sample space is equally likely to occur.
 
 ## Probability of a single event occurring
-Thus, for a uniform distribution:
+For a uniform distribution:
 
 $\text{Probability of a specific event} = \frac{\text{Cardinality of the event}}{\text{Cardinality of the set}} \qquad \text{or} \qquad P(E) = \frac{n(E)}{n(S)}$
 
 If $P(E) = 1$, the occurence of event E is certain. If $P(E) = 0$, the occurence of event E is impossible.
 
+## Probabilty of either of two events occuring.
+For a uniform distribution, the <ins>union</ins> of the two sets gives this probability.
+E.g. Select for numbers that are either prime or odd on a 6-sided die.
+
+$E = (2,3,5) \cup (1,3,5) = (1,2,3,5)$
+
+Thus: $P(E) = \frac{4}{6} = \frac{2}{3}$
+
+## Probability of two events occurring simultaneously.
+For a uniform distribution, the <ins>intersection</ins> of the two sets gives this probability.
+E.g. Select for numbers thay are both prime and odd on a 6-sided die.
+
+$E = (2,3,5) \cap (1,3,5) = (3,5)$
+
+Thus: $P(E) = \frac{2}{6} = \frac{1}{3}$
