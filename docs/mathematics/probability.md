@@ -30,3 +30,10 @@ E.g. Select for numbers thay are both prime and odd on a 6-sided die.
 $E = (2,3,5) \cap (1,3,5) = (3,5)$
 
 Thus: $P(E) = \frac{2}{6} = \frac{1}{3}$
+
+## Expectation Values
+- Discrete random variable: A randomly sampled event that only takes integral values (e.g a die roll).
+- Continuous random variable: A randomply sampled event that can take any real value.
+- Expectation value:
+$$E = (\text{value 1})(\text{probability of value 1})+...+(\text{value n})(\text{probability of value n} = x_{1}P(x_{1})+x_{2}P(x_{2})+...+x_{n}P(x_{n})$$
+- Law of large numbers: Principle that the average result of random sampling converges to the expectation value as more samples are taken.
