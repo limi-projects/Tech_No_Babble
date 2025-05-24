@@ -37,3 +37,22 @@ Thus: $P(E) = \frac{2}{6} = \frac{1}{3}$
 - Expectation value:
 $$E = (\text{value 1})(\text{probability of value 1})+...+(\text{value n})(\text{probability of value n} = x_{1}P(x_{1})+x_{2}P(x_{2})+...+x_{n}P(x_{n})$$
 - Law of large numbers: Principle that the average result of random sampling converges to the expectation value as more samples are taken.
+```python
+from random import randint
+coin = {'H':(1/2), 'T':(1/2)}
+die = {1:(1/6), 2:(1/6), 3:(1/6), 4:(1/6), 5:(1/6), 6:(1/6),}
+
+def expectation_value(thing):
+    exp_val = sum([x*y for x,y in thing.items()])
+    return exp_val
+
+expectation_value(die)
+
+def lln(thing, tests):
+    roll = (lambda: randint(1,6))
+    results = [roll() for i in range(1, tests+1)]
+    lln = sum(results)/len(results)
+    print(lln)
+
+lln(die, 10000000)
+```
