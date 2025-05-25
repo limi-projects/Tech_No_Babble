@@ -63,3 +63,8 @@ def animate(shape):
 
 animate(circle)
 ```
+```fargs``` is the arguments that are to be passed to the _change_shape(shape,) helper function.
+```frames``` is the number of animation frames.
+```interval``` is the time gap between animations.
+
+NB: Due to a quirk of matplotlib, the ```animation.FuncAnimation``` method must be assigned to a variable, even if that variable isn't callled. 
