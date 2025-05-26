@@ -128,3 +128,44 @@ x,y = draw(1000, transformations)
 plt.plot(x, y, 'o')
 plt.show()
 ```
+
+## Mandelbrot Set
+```python
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+import random
+
+def initialise_image(x_p, y_p):
+    image = []
+    for i in range(y_p):
+        x_colours = []
+        for j in range(x_p):
+            x_colours.append(0)
+        image.append(x_colours)
+    return image
+
+def colour_points():
+    n = 400
+    max_iteration = 1000
+    x0, x1 = -2.5, 1
+    y0, y1 = -1, 1
+    image = initialise_image(n,n)
+    dx = (x1-x0)/(n-1)
+    dy = (y1-y0)/(n-1)
+    x_coords = [x0 + i*dx for i in range(n)]
+    y_coords = [y0 + i*dy for i in range(n)]
+    for i,x in enumerate(x_coords):
+        for k,y in enumerate(y_coords):
+            z = complex(0,0)
+            c = complex(x,y)
+            iteration = 0
+            while abs(z) < 2 and iteration < max_iteration:
+                z = (z**2) + c
+                iteration+=1
+            image[k][i] = iteration
+    plt.imshow(image, origin='lower', extent=(-2.5, 1, -1, 1),
+               cmap=cm.Greys_r, interpolation='nearest')
+    plt.show()
+
+colour_points()
+```
