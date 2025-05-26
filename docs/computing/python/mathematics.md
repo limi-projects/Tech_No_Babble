@@ -1,6 +1,12 @@
 
 ## The ```math``` module
-
+The ```math``` module contains many useful mathematics functions.
+```python
+import math
+out = math.sin(math.pi)
+print(out)
+```
+> 1.2246467991473532e-16
 
 ## Floor division
 Ignores the remainder following a division operation.
@@ -211,4 +217,29 @@ plot(equation)
         |                .....     .....
       0 |_______________________________________________________
          -10                        0                          10
+```
+
+### Limits
+Sympy can also be used to evaluate limits.
+```python
+from sympy import Limit, Symbol, S
+x = Symbol('x')
+out = Limit(1/x, x, S.Infinity)
+print(out)
+```
+```
+Limit(1/x, x, oo, dir='-')
+0 # i.e. 1/x tends to 0 as x appraches infinity
+```
+NB: The ```S``` class contains infinity, as well as other useful maths functions. 
+The ```dir='-'```tag inidcates the direction in which the limit is approached.
+```python
+from sympy import Limit, Symbol, S
+x = Symbol('x')
+pos = Limit(1/x, x, 0, dir='+').doit()
+neg = Limit(1/x, x, 0, dir='-').doit()
+print(pos, neg)
+```
+```
+oo -oo
 ```
