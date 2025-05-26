@@ -243,3 +243,37 @@ print(pos, neg)
 ```
 oo -oo
 ```
+
+### Derivatives and Integrals
+Differentiation
+```python
+from sympy import Symbol, Derivative, sympify
+fn = sympify('x**3')
+der = Derivative(fn, 'x').doit()
+print(der)
+```
+```
+3*x**2
+```
+Indefinite Integration
+```python
+from sympy import Integral, sympify
+fn = sympify('x**3')
+x = sympify('x')
+integ = Integral(fn, x).doit()
+print(integ)
+```
+```
+x**4/4
+```
+NB: the integral method is sensitive to string inputs, hence why x had to sympified prior to its usage.
+Definite Integration (i/e. within limits)
+```python
+from sympy import Integral, sympify
+fn = sympify('x**3')
+integ = Integral(fn, ('x', 0, 4)).doit()
+print(integ)
+```
+```
+64
+```
