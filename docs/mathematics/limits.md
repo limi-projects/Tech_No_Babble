@@ -11,6 +11,6 @@ For example, conside an object accelerating according to a function S(t), where 
 The distance the object moves in one infinitesimal unit of time is threfore $\frac{S(t_{2}) - S(t_{1})}{t_{2} - t_{1}}$
 Consider also that $S(t_{2}) = S(t_{1}+\delta_{t})$ where $\delta_{t}$ the infinitesimal difference between $t_{1}$ and $t_{2}$.
 It therefore follows that $\frac{S(t_{1}+\delta_{t}) - S(t_{1})}{\delta_{t}}$, putting the entire function in terms of $t_{1}$.
-If $\delta_{t}$ is evaluated as a limit that tends to zero, we obtain the instantaneous speed (i.e. the derivative of the acceleration) at time t_{1} (i.e. at any time we choose):
+If $\delta_{t}$ is evaluated as a limit that tends to zero, we obtain the instantaneous speed (i.e. the derivative of the acceleration) at time $t_{1}$ (i.e. at any time we choose):
 
 $\lim_{\delta_{t} \to 0} \frac{S(t_{1}+\delta_{t}) - S(t_{1})}{\delta_{t}}$
