@@ -14,17 +14,11 @@ flowchart TD
 
 ## Box Types
 ```mermaid
-
 flowchart TD
-  NODE[Rectangle] --> NODE(Rounded Edges)
-  NODE([Stadium])
-  NODE[[Subroutine]]
-  NODE[(Database)]
-  NODE((Circle))
-```
-
-```mermaid
-flowchart LR
-  A e1@==> B
-  e1@{ animate: true }
+  A--> B[Rectangle]
+  B--> C(Rounded Edges)
+  C--> D([Stadium])
+  D--> E[[Subroutine]]
+  E--> F[(Database)]
+  F--> G((Circle))
 ```
