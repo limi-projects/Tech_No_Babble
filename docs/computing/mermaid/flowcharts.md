@@ -1,14 +1,17 @@
 # Flowcharts
-In flowcharts, features are catgorised as nodes (e.g. boxes) or egdes (e.g. arrows).
-Flowchart orintations are declared using TD (top-down), TB (top-bottom), BT (Bottom-top), RL (Right-Left), LR (Left-Right)
+In flowcharts, features are categorised as nodes (e.g. boxes) or edges (e.g. arrows).
+Flowchart orientations are declared using TD (top-down), TB (top-bottom), BT (Bottom-top), RL (Right-Left), LR (Left-Right)
 
 ---
 ```mermaid
 ---
 title: Flowchart Title
 ---
-flowchart TD
-    NODE1 --> NODE2
+flowchart LR
+    A[Select compositions] --> B
+    B[Generate SQS models] --> C[Get mixing enthalpies]
+    B --> D[Generate slab models]
+    D --> E[Get adsorption energies]
 ```
 ---
 
