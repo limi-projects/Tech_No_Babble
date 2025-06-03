@@ -14,6 +14,20 @@ flowchart LR
     D --> E[Get adsorption energies]
 ```
 ---
+---
+```mermaid
+---
+title: Flowchart Title
+---
+flowchart LR
+    A[Bulk DFT calculation - VASP] --> B[Get eigenvalues - Python]
+    A --> C[Get electrostatic potentials - Macrodensity]
+    B --> D[Calibrate eigenvalues - Python]
+    C --> D
+    D --> E[Extract absolute band edges - Python]
+```
+---
+
 
 ## Box Types
 ```mermaid
