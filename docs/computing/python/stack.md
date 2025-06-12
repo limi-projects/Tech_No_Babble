@@ -33,6 +33,6 @@ This stack can be represented diagramatically as:
 block-beta
   columns 7
   space space L["C"] space space space space 
-  space H["B"] I["B"] J["B"] space K["B"] space 
+  space H["B"] I["B"] J["B"] space K["D"] space 
   A["A"] B["A"] C["A"] D["A"] E["A"] F["A"] G["A"]
 ```
