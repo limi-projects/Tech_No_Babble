@@ -170,7 +170,15 @@ Outputs
 Tom 31
 John 42 100
 ```
-
+```end=''``` can be used within ```print()``` to remove the line break:
+```python
+print('a', end='')
+print('b')
+```
+```
+ab
+```
+ 
 ## Arbitrary Arguments
 The ```*args``` and ```**kwargs``` (or ```*``` and ```**```) tags may be used to account for additional aguments that may be input by the user (intentiaonlly or otherwise).
 The additional arguments are stored in a tuple or dictionary that may be accessed via the ```*args``` and ```**kwargs``` variables within the function, respectively. 
