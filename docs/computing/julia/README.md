@@ -1,2 +1,2 @@
 # Julia
-Julia is a programming language that is celebrated for its parallelisation capabilities.
+Julia is a programming language that is praised for its parallelisation capabilities.
