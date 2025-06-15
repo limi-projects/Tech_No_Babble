@@ -1,4 +1,5 @@
 # Python 
+Python is a programmming language that is praised for its accessibility, readability and extensive package libraries. 
 
 ## Data Types
 - [Data Types](data_types.md)
