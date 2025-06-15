@@ -1,4 +1,5 @@
 # Computing
+What computers do and how they work.
 
 ## Concepts
 ### [Machine Learning](concepts/machine_learning/README.md) | [Quantum Computing](concepts/quantum_computing/README.md)
