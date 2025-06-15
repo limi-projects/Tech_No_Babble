@@ -1,12 +1,9 @@
 # Computing
 
-## [Concepts](concepts/README.md)
+## Concepts
+### [Machine Learning](concepts/machine_learning/README.md) | [Quantum Computing](concepts/quantum_computing/README.md)
 
 ## Programming Languages
-### [Julia](julia/README.md) | [Python](python/README.md) | [SQL](sql/README.md)
-
-### Coming Soon
-- Move concepts to a separate section
-- Add C++ section.
+### [C++](languages/cpp/README.md) | [Julia](languages/julia/README.md) | [Python](languages/python/README.md) | [Mermaid](languages/mermaid/README.md) | [SQL](languages/sql/README.md)
 
 #### [Home](../README.md)
