@@ -68,3 +68,4 @@ animate(circle)
 ```interval``` is the time gap between animations.
 
 NB: Due to a quirk of matplotlib, the ```animation.FuncAnimation``` method must be assigned to a variable, even if that variable isn't callled. 
+#### [Back](README.md)

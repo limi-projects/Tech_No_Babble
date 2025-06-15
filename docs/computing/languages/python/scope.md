@@ -9,3 +9,4 @@
 - Different local scopes do not share variables.
 - Consequently, the same variable names can be used in different scopes. However, this is not recommended.
 - The ```global``` statement can be used to change the value of a global variable from within a function. However, this is not recommended.
+#### [Back](README.md)

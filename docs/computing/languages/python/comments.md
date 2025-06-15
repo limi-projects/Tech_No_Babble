@@ -39,3 +39,4 @@ print(some_fn.__annotations__)
 > {'param1': <class 'str'>, 'param2': <class 'int'>, 'return': <class 'float'>}
 
 #### Back to [Python](./README.md) | [Computing](../README.md) | [Home](../../README.md)
+#### [Back](README.md)
