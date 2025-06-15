@@ -3,9 +3,7 @@
 ## [Concepts](concepts/README.md)
 
 ## Programming Languages
-### [Julia](julia/README.md) 
-### [Python](python/README.md)
-### [SQL](sql/README.md)
+### [Julia](julia/README.md) | [Python](python/README.md) | [SQL](sql/README.md)
 
 ### Coming Soon
 - Move concepts to a separate section
