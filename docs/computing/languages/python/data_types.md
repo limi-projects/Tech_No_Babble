@@ -565,7 +565,34 @@ print(characters)
 
 Dictionaries store different information pieces about one object (e.g. a single person's height, weight, etc.) or the same piece of information for many objects (e.g. the heights of many people).
 
-### ```get()``` method
+### The ```get()``` method
+The ```get()``` method allows you to search for keys within a dictionary, and if the key isn't present, a fallback value can be provided.
+```python
+stuff = {'a':5, 'b':9}
+print(stuff.get('a', 'Missing'))
+print(stuff.get('c', 'Missing'))
+```
+```
+5
+Missing
+```
+
+### The ```setdefault()```  method
+This method sets a default value for a key-value pair. The value cannot be changed once this is done.
+```python
+stuff = {'a':5, 'b':9}
+stuff.setdefault('def', 'unchanged')
+print(stuff)
+stuff.setdefault('def', 'changed')
+print(stuff)
+stuff['def'] = 'changed'
+print(stuff)
+```
+```
+{'a': 5, 'b': 9, 'def': 'unchanged'}
+{'a': 5, 'b': 9, 'def': 'unchanged'}
+{'a': 5, 'b': 9, 'def': 'changed'}
+```
 
 ### Looping through dictionaries
 Looping through keys, values or both is controlled via the ```keys()```, ```values()``` and ```items()``` methods.
