@@ -24,7 +24,7 @@ coin_flip_streaks(1000, 'TTTTTT')
 ```
 ## Pg 108 - Character Picture Grid
 ```python
-from copy import copy # Needed to enusre that the nested lists are separate entities.
+from copy import copy # Needed to enusre that the nested lists are separate entities and not merely referencing the same entity.
 
 empty = ' '
 filled = 'o'
