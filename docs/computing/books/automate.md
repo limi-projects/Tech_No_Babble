@@ -41,3 +41,5 @@ for y, x_vals in enumerate(coords):
 for row in lines:
     print(''.join(row))
 ```
+
+## Pg 120 - Noughts and crosses
