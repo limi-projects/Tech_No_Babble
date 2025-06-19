@@ -69,3 +69,43 @@ def play_noughts_and_crosses():
 
 play_noughts_and_crosses()
 ```
+
+## Pg 127 - Chessboard (unfinished)
+```python
+from itertools import product
+pieces = ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 
+          'r1', 'r2', 'k1', 'k2', 'b1', 'b2', 'q', 'k',]
+whites = ['w'+p for p in pieces]
+blacks = ['b'+p for p in pieces]
+
+row = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',]
+column = ['1', '2', '3', '4', '5', '6', '7', '8',]
+
+places = product(row, column)
+places = [''.join(place) for place in places]
+blank_board = {place: ' ' for place in places}
+print(blank_board)
+setup_board = 
+```
+
+## Pg 127 - Game inventory
+```python
+inventory = {'arrow': 12, 'gold': 42, 'rope': 1, 'torch': 6, 'dagger': 1}
+loot = {'gold': 10, 'rope': 1, 'ruby': 1}
+
+def display_inventory(inventory):
+    print('Inventory:')
+    for k, v in inventory.items():
+        print(v, k)
+    print(f'Total items: {sum(inventory.values())}')
+
+def add_to_inventory(inventory, additions):
+    for k, v in additions.items():
+        if k in inventory.keys():
+            inventory[k] += v
+        else:
+            inventory[k] = v
+
+add_to_inventory(inventory, loot)
+display_inventory(inventory)
+```
