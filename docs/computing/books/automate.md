@@ -43,3 +43,29 @@ for row in lines:
 ```
 
 ## Pg 120 - Noughts and crosses
+```python
+nnc_board = {'TL': ' ', 'TM': ' ', 'TR': ' ',
+             'ML': ' ', 'MM': ' ', 'MR': ' ',
+             'LL': ' ', 'LM': ' ', 'LR': ' ',}
+
+def print_board(board):
+    print(board['TL'] + '|' + board['TM'] + '|' + board['TR'])
+    print('-+-+-')
+    print(board['ML'] + '|' + board['MM'] + '|' + board['MR'])
+    print('-+-+-')
+    print(board['LL'] + '|' + board['LM'] + '|' + board['LR'])
+
+def play_noughts_and_crosses():
+    turn = 'X'
+    for i in range(9):
+        print_board(nnc_board)
+        print(f"{turn}'s turn.")
+        move = input()
+        nnc_board[move] = turn
+        if turn == 'X':
+            turn = 'O'
+        else:
+            turn = 'X'    
+
+play_noughts_and_crosses()
+```
