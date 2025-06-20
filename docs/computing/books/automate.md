@@ -72,41 +72,32 @@ play_noughts_and_crosses()
 
 ## Pg 127 - Chessboard (unfinished)
 ```python
-from itertools import product
+from copy import copy
 
-def make_board(lst, n):
-    """Yield successive n-sized chunks from lst."""
-    for i in range(0, len(lst), n):
-        yield lst[i:i + n]
+def translate(l):
+    for k, v in enumerate(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', ]):
+        if l == v:
+            return k
+            
+p = {
+    'wR1': ['a', 1], 'wN1': ['b', 1], 'wB1': ['c', 1], 'wK ': ['d', 1], 'wQ ': ['e', 1], 'wB2': ['f', 1], 'wN2': ['g', 1], 'wR2': ['h', 1],
+    'wP1': ['a', 2], 'wP2': ['b', 2], 'wP3': ['c', 2], 'wP4': ['d', 2], 'wP5': ['e', 2], 'wP6': ['f', 2], 'wP7': ['g', 2], 'wP8': ['h', 2], 
+    'bP1': ['a', 7], 'bP2': ['b', 7], 'bP3': ['c', 7], 'bP4': ['d', 7], 'bP5': ['e', 7], 'bP6': ['f', 7], 'bP7': ['g', 7], 'bP8': ['h', 7],
+    'bR1': ['a', 8], 'bN1': ['b', 8], 'bB1': ['c', 8], 'bK ': ['d', 8], 'bQ ': ['e', 8], 'bB2': ['f', 8], 'bN2': ['g', 8], 'bR2': ['h', 8],
+     }
 
-pieces = ['P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8', 'R1', 'R2', 'N1', 'N2', 'B1', 'B2', 'Q', 'K',]
-whites = ['w'+p for p in pieces]
-blacks = ['b'+p for p in pieces]
+empty, filled = '   ', 'o'
+dimensions = (8, 8)
+line = [empty] * dimensions[0]
+lines =  [line.copy() for i in range(dimensions[1])] 
+print('   ', ' '.join([' a ', ' b ', ' c ', ' d ', ' e ', ' f ', ' g ', ' h ', ]))
+print('_' * 35)
 
-row = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',]
-column = ['1', '2', '3', '4', '5', '6', '7', '8',]
+for k, v in p.items():
+    lines[v[1]-1][translate(v[0])] = k
 
-places = product(row, column)
-places = [''.join(place) for place in places]
-board = list(make_rows(places, 8))
-
-print(whites)
-for i in whites:
-    if 'P' in i:
-        print(i)
-#starting_config = {f} 
-
-
-#print(s[0])
-#for i in board:
-#    print(i)
-#a = places[0:8]
-#b = places[8:16]
-#c = places[16:24]
-#print(c)
-#blank_board = {place: ' ' for place in places}
-#print(blank_board)
-#setup_board = 
+for row, line in enumerate(lines, 1):
+    print(row, '|', ' '.join(line))
 ```
 
 ## Pg 127 - Game inventory
