@@ -97,7 +97,10 @@ for k, v in p.items():
     lines[v[1]-1][translate(v[0])] = k
 
 for row, line in enumerate(lines, 1):
+    print('  |')
     print(row, '|', ' '.join(line))
+
+print('  |')
 ```
 
 ## Pg 127 - Game inventory
