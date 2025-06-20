@@ -73,8 +73,13 @@ play_noughts_and_crosses()
 ## Pg 127 - Chessboard (unfinished)
 ```python
 from itertools import product
-pieces = ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 
-          'r1', 'r2', 'k1', 'k2', 'b1', 'b2', 'q', 'k',]
+
+def make_board(lst, n):
+    """Yield successive n-sized chunks from lst."""
+    for i in range(0, len(lst), n):
+        yield lst[i:i + n]
+
+pieces = ['P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8', 'R1', 'R2', 'N1', 'N2', 'B1', 'B2', 'Q', 'K',]
 whites = ['w'+p for p in pieces]
 blacks = ['b'+p for p in pieces]
 
@@ -83,9 +88,25 @@ column = ['1', '2', '3', '4', '5', '6', '7', '8',]
 
 places = product(row, column)
 places = [''.join(place) for place in places]
-blank_board = {place: ' ' for place in places}
-print(blank_board)
-setup_board = 
+board = list(make_rows(places, 8))
+
+print(whites)
+for i in whites:
+    if 'P' in i:
+        print(i)
+#starting_config = {f} 
+
+
+#print(s[0])
+#for i in board:
+#    print(i)
+#a = places[0:8]
+#b = places[8:16]
+#c = places[16:24]
+#print(c)
+#blank_board = {place: ' ' for place in places}
+#print(blank_board)
+#setup_board = 
 ```
 
 ## Pg 127 - Game inventory
