@@ -70,7 +70,31 @@ def play_noughts_and_crosses():
 play_noughts_and_crosses()
 ```
 
-## Pg 127 - Chessboard (unfinished)
+## Pg 127 - Chessboard
+```python
+chessboard = {'1h': 'bP', '7a': 'wQ', '9z': 'Iv'}
+
+rows = ['1', '2', '3', '4', '5', '6', '7', '8', ]
+columns = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', ]
+colours = ['b','w']
+roles = ['P', 'R', 'N', 'B', 'K', 'Q', ]
+
+def check_field(item, field):
+    if item in field:
+        pass
+    else:
+        print(f'Error: {item} is an invalid index')
+
+for place, piece in chessboard.items():
+    row, column, colour, role = place[0], place[1], piece[0], piece[1] 
+    check_field(row, rows)
+    check_field(column, columns)
+    check_field(colour, colours)
+    check_field(role, roles)
+```
+
+### Extra: Build chessboard
+
 ```python
 from copy import copy
 
