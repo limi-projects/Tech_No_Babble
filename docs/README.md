@@ -9,6 +9,3 @@ You can navigate through the contents through the links below.
 ## Physical Sciences
 
 ### [Chemistry](chemistry) | [Computing](computing) | [History](history) | [Law](law) | [Mathematics](mathematics) | [Physics](physics)
-
-
-#### [Home](./README.md) 
