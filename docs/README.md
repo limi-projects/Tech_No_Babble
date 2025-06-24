@@ -2,7 +2,7 @@
 
 This is a personal study record that I maintain for personal reference.
 
-Throughout, I emphasise plain English communication with as little technical jargon as possible.
+Throughout, I aim to communicate ideas in plain English, with as little technical jargon as possible.
 
 | Discipline | Description
 |---|---|
