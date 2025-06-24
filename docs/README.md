@@ -2,9 +2,7 @@
 
 This is a repository of useful bits of information that I've picked up over the years.
 
-The emphasis is on plain English communication with as little technical jargon as possible.
-
-You can navigate through the contents through the links below. 
+Throughout, I emphasise plain English communication with as little technical jargon as possible.
 
 - [Chemistry](chemistry): The study of matter and its properties.
 - [Computing](computing): The sudy of computer software and hardware.
