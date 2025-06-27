@@ -2,7 +2,31 @@
 Python is a programmming language that is praised for its accessibility, readability and extensive package libraries. 
 
 ## Data Types
-- [Data Types](data_types.md)
+Definitions of each python data type and their common operations.
+- [Dictionaries](data_types/dictionaries.md)
+- [Lists](data_types/lists.md)
+- [Sets](data_types/sets.md)
+- [Strings](data_types/strings.md)
+- [Tuples](data_types/tuples.md)
+
+## Identifying and Converting Data Types
+The ```type()``` function verifies the data type of a datum.
+```python
+print(type("String"))
+print(type(1))
+print(type(1.0))
+print(type(["a", "b", "c"]))
+print(type(("a", "b", "c")))
+print(type({"a", "b", "c"}))
+print(type({"a":1, "b":2, "c":3}))
+```
+> <class 'str'>\
+> <class 'int'>\
+> <class 'float'>\
+> <class 'list'>\
+> <class 'tuple'>\
+> <class 'set'>\
+> <class 'dict'>
 
 ## Concepts
 - [Classes](classes.md)
