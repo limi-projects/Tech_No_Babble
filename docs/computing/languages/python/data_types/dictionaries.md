@@ -161,3 +161,5 @@ t_characters = {key:value*2 for key, value in characters.items() if "t" in key} 
 print(t_characters)
 ```
 > {'tinker': 8, 'tailor': 16, 'thief': 16}
+
+#### [Back](../../README.md)
