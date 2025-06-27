@@ -3,13 +3,17 @@ Python is a programmming language that is praised for its accessibility, readabi
 
 ## Data Types
 Definitions of each python data type and their common operations.
+- [Strings](data_types/strings.md)
+
+
+## Data Structures
 - [Dictionaries](data_types/dictionaries.md)
 - [Lists](data_types/lists.md)
 - [Sets](data_types/sets.md)
-- [Strings](data_types/strings.md)
 - [Tuples](data_types/tuples.md)
 
-## Identifying and Converting Data Types
+
+### Identifying and Converting Data Types
 The ```type()``` function verifies the data type of a datum.
 ```python
 print(type("String"))
