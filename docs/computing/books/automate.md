@@ -148,3 +148,60 @@ def add_to_inventory(inventory, additions):
 add_to_inventory(inventory, loot)
 display_inventory(inventory)
 ```
+
+## Pg 144 - Multiclipboard Automatic Messages
+Create reusable, modifiable text that can be copied to the clipboard.
+```python
+from pyperclip import copy, paste
+from sys import argv
+
+def assign_result(result : str) -> str:
+    '''Identify the pass/fail verdict.'''
+    match result.lower():
+        case 'pass' | 'passed' | 'p':
+            return "I'm pleased to report that this matter has Passed Testing"
+        case 'fail' | 'failed' | 'f':
+            return "Unfortunately, this matter has Failed Testing.\n\nIn short:"
+        case _:
+            return 'ERROR: INVALID RESULT VALUE'
+
+def assign_recipient(recipient : str) -> str:
+    '''Identify the recipient.'''
+    match recipient.lower():
+        case 'tom':
+            return 'Tom Tinker'
+        case 'dick':
+            return 'Richard Tailor'
+        case 'harry':
+            return 'Harold Soldier'
+        case _:
+            return 'ERROR: INVALID RECIPIENT VALUE'
+
+# Read user input.
+recipient, result = argv[1], argv[2]
+
+# Embed user input data into text and copy to clipboard.
+copy(f'''Hi {assign_recipient(recipient)},
+
+Thank you for you hard work on this.
+
+{assign_result(result)}.
+
+Please see the attached Test Method document, for further details of the tests:
+
+Should you have any questions or concerns, please do not hesitate to contact us.
+
+Many thanks!
+''')
+```
+
+## Pg 147 - Modifying clipboard text
+Copy some text to the clipboard. Transform it. Then replace the clipboard text with the transformed text.
+```python
+from pyperclip import copy, paste
+from sys import argv
+
+input_text = paste()
+modified_text = input_text.upper()
+output_text = copy(f'{modified_text} [This is modified]')
+```
