@@ -207,6 +207,7 @@ output_text = copy(f'{modified_text} [This is modified]')
 ```
 
 ## Pg 154 - Table Printer
+Transpose data and set the column widths to the widest data within each column (to optimise spacing).
 ```python
 fruit = ['apple', 'pear', 'coconut', 'fig']
 names = ['Tom', 'Dick', 'Harry', 'Hercules',]
