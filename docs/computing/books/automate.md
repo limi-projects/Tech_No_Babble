@@ -205,3 +205,36 @@ input_text = paste()
 modified_text = input_text.upper()
 output_text = copy(f'{modified_text} [This is modified]')
 ```
+
+## Pg 154 - Table Printer
+```python
+fruit = ['apple', 'pear', 'coconut', 'fig']
+names = ['Tom', 'Dick', 'Harry', 'Hercules',]
+animals = ['cat', 'dog', 'horse', 'parrot']
+
+los = [fruit, names, animals]
+
+def get_widths(los):
+    widths = []
+    for i, k in enumerate(los):
+        string_lengths = [len(j) for j in k]
+        widths.append(max(string_lengths))
+    return widths
+
+def set_widths(entry):
+    merged = [j[0].ljust(j[1], ' ') for j in entry]
+    merged = ' '.join(merged)
+    return merged
+
+transpose = [list(row) for row in zip(*los)]
+widths = get_widths(los)
+assigned = [list(zip(i,widths)) for i in transpose]
+formatted = map(set_widths, assigned)
+print('\n'.join(formatted))
+```
+```
+apple   Tom      cat
+pear    Dick     dog
+coconut Harry    horse
+fig     Hercules parrot
+```
