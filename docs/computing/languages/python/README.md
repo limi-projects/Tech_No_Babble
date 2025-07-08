@@ -50,6 +50,9 @@ print(type({"a":1, "b":2, "c":3}))
 
 ## References 
 - *Python Crash Course - A Hands-On, Project-Based Introduction to Programming* by *Eric Matthes* (ISBN-10: 1-59327-928-0).
+- *Automate the Boring Stuff with Python - Practical Programming for Total Beginners* by Al Sweigart (ISBN-10: 1-59327-992-2).
+- *Doing Math with Python - Use Programming to explore Algebra, Statistics, Calculus and More!* by Amit Saha (ISBN-10: 1-59327-640-0).
+- [*The Python Tutorial*](https://docs.python.org/3/tutorial/index.html)
 
 ### Coming Soon
 - Helper functions.
