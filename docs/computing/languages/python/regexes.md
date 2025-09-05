@@ -199,6 +199,16 @@ print(s7) # >> ['There are', '', ' 4-5 people in This room', '']
 
 ## Case Sensitivity
 Case Sensitivity can be toggled by using ```re.IGNORECASE``` or ```re.I```.
+```python
+import re
 
+f = re.compile(r'T')
+g = re.compile(r'T',re.IGNORECASE)
+s1 = f.findall('There are 4-5 people in this room')
+s2 = g.findall('There are 4-5 people in this room')
+
+print(s1) # >> ['T']
+print(s2) # >> ['T', 't']
+```
 
 #### [Back](README.md)
