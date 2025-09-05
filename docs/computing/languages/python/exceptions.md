@@ -1,39 +1,39 @@
 # Exceptions
-Exceptions are objects that are used to handle errors.
-If an exception is not addressed in the code, ```Python``` will provide a _traceback_, to report the location and nature of the error.
+Exceptions are objects that handle errors.
+
+Without bespoke exception handling, ```Python``` will provide a defalult _traceback_, to report the error type and location.
 
 ## Try-Except-else blocks 
-These are used to handle exceptions. Put the bulk of your code in the ```try``` block, exceptions in the ```except``` block, and the desired outcome in the ```else``` block:
+To handle exceptions yourself, put the bulk of the code in the ```try``` block, exceptions in the ```except``` block, and the desired outcome in the ```else``` block:
 ```python
-def divider(n1,n2):
+def division_with_exception(dividend: int, divisor: int) -> float:
+    '''Divides two integers. Throws a bespoke error if dividing by zero'''
     try:
-        outcome = n1/n2
+         quotient = dividend/divisor
     except ZeroDivisionError:
-        print("Not allowed")
+        return("ERROR: You cannot divide by zero")
     else:
-        print(outcome)
+        return(quotient)
 
-divider(3,2)
-divider(2,0)
+print(division_with_exception(3,2)) # >> 1.5
+print(division_with_exception(2,0)) # >> ERROR: You cannot divide by zero
 ```
-> 1.5\
-> Not allowed
 
 ## Skipping errors
 The pass statement can be used to ignore an error and move on.
 ```python
-def divider(n1,n2):
+def division_skipping_exception(dividend: int, divisor: int) -> float:
     try:
-        outcome = n1/n2
+         quotient = dividend/divisor
     except ZeroDivisionError:
         pass
     else:
-        print(outcome)
+        return(quotient)
 
-divider(3,2)
-divider(2,0)
+print(division_skipping_exception(3,2)) # >> 1.5
+print(division_skipping_exception(2,0)) # >> None
 ```
-> 1.5
 
 ## The ```raise``` keyword. 
+TODO
 #### [Back](README.md)
