@@ -211,4 +211,30 @@ print(s1) # >> ['T']
 print(s2) # >> ['T', 't']
 ```
 
+## Substitution
+The ```sub()``` method enables the substituition of patterns.
+```python
+import re
+
+f = re.compile(r'are')
+s1 = f.sub('are not','There are 4-5 people in this room')
+
+print(s1) # >> There are not 4-5 people in this room
+```
+
+## Multiline regexes.
+The ```re.VERBOSE``` toggle can be used to handle multiline regexes.
+```python
+import re
+
+f = re.compile(r'''
+are|in
+''', re.VERBOSE)
+s1 = f.findall('There are 4-5 people in this room')
+
+print(s1) # >> ['are', 'in']
+```
+
+NB: Use ```|``` to combine ```re.IGNORECASE```, ```re.DOTALL``` and ```re.VERBOSE``` (i.e. re.compile('Hello World', re.IGNORECASE | re.DOTALL | re.VERBOSE) 
+
 #### [Back](README.md)
