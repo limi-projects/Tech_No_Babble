@@ -1,7 +1,5 @@
 # SQLite
 SQLite allows for serverless manipulation of SQL databases. 
-It is a lightweight database engine, written in C.
-This makes it well suited for isolated, embedeed applications.
 It can be imported as a module within Python as ```sqlite3```.
 
 ## Database Creation and Connection
