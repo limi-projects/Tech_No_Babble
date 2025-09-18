@@ -165,7 +165,7 @@ e
 r
 s
 ```
-
+Alternatively, ```sys.exit()``` can also be used to exit the entire program, regardless of the program's progress.
 ## Continue Statements
 Continue statements allow you move onto the next iteration of a loop, whilst taking an alternative action. This is good for exceptional cases within an iterable. 
 ```python
