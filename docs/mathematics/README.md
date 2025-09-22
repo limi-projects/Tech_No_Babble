@@ -1,3 +1,0 @@
-# Contents
-
-#### [Home](../README.md)
