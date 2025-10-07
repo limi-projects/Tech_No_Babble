@@ -3,7 +3,7 @@
 ## General Concepts
 | Concept | Description|
 |---|---|
-| [AI](ai.md) | Abdicating data analysis, generation and/or interpretation to the computer.|
+| [Artificial Intelligence](ai.md) | Abdicating data analysis, generation and/or interpretation to the computer.|
 
 ## Programming Languages
 | Language | Description|
