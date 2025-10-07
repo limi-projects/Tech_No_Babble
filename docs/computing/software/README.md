@@ -1,18 +1,18 @@
 # Software
 
 ## General Concepts
-| Concept | Description|
+| Concept | Description
 |---|---|
-| [Artificial Intelligence](ai.md) | Abdicating data analysis, generation and/or interpretation to the computer.|
+| [Artificial Intelligence](ai.md) | Abdicating data analysis, generation and/or interpretation to the computer.
 
 ## Programming Languages
-| Language | Description|
+| Language | Description
 |---|---|
-| [Python](python.md) | Intuitive, with a comprehensive library of functions.|
+| [Python](python.md) | Intuitive, with a comprehensive library of functions.
 
 ## Microsoft Products
-| Product | Description|
+| Product | Description
 |---|---|
-| [Power Bi](power_bi.md) | For data analysis and visualisation.|
+| [Power Bi](power_bi.md) | For data analysis and visualisation.
 
 [Back](../README.md)
