@@ -15,4 +15,4 @@
 |---|---|
 | [Power Bi](power_bi.md) | For data analysis and visualisation.|
 
-[Back](./README.md)
+[Back](../README.md)
