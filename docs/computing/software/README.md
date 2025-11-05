@@ -10,7 +10,8 @@
 
 | Language | Description
 |---|---|
-| [Python](python.md) | Intuitive, with a comprehensive library of functions.
+| [Python](python.md) | Intuitive, with a comprehensive library of functions. |
+| [SQL](sql.md) | For relational database management. |
 
 ## Microsoft Products
 

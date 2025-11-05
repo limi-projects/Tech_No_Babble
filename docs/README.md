@@ -9,6 +9,15 @@ If necessary, jargon is listed in the _Technobabble_ section at the bottom of ea
 |---|---|
 | [Computing](computing) | The study of computer software and hardware.
 
+## Miscellaneous Projects
+A collection of projects that use the above information. 
+
+| Project | Description | Relevant Disciplines |
+|---|---|---|
+| Alarm Clock | A raspberry-pi pico controlled alarm clock. | Python |
+| Monte Carlo | Estimating the value of ${\pi}$ using the Monte-Carlo method. | Python |
+| Permutator | A permutation creation and filtering script. | Python |
+
 <!--
 | [Chemistry](chemistry) | The study of matter and its properties.
 | [History](history) | The study of past events.
