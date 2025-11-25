@@ -7,8 +7,10 @@ If necessary, jargon is listed in the _Technobabble_ section at the bottom of ea
 
 | Discipline | Description
 |---|---|
-| [Computing](computing) | The study of computer software and hardware.
-
+| [Chemistry](chemistry/README.md) | The study of matter and its properties.
+| [Computing](computing/README.md) | The study of computer software and hardware.
+| [Mathematics](mathematics/README.md) | The study of numbers, geometry and logic.
+<!--
 ## Miscellaneous Projects
 A collection of projects that use the above information. 
 
@@ -18,13 +20,10 @@ A collection of projects that use the above information.
 | Monte Carlo | Estimating the value of ${\pi}$ using the Monte-Carlo method. | Python |
 | Permutator | A permutation creation and filtering script. | Python |
 
-<!--
-| [Chemistry](chemistry) | The study of matter and its properties.
 | [History](history) | The study of past events.
 | [Law](law) | The study of formal social constraints, their interpretation and their implementation.
 | [Mathematics](mathematics) | The study of numbers, geometry and logic.
 | [Physics](physics) | The study of matter, energy and their fundamental relationships.
-
 
 ## Projects (In Development)
 | Project | Description | Categories |

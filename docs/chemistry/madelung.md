@@ -1,4 +1,11 @@
-'''
+# The Madelung Potential
+<!--
+ADD DESCRIPTION
+-->
+
+
+## Python Code
+```python
 from scipy.constants import pi, e, epsilon_0, N_A
 from numpy import log
 from limi_utils import plot_and_tabulate
@@ -21,8 +28,9 @@ plot_and_tabulate(x_range,
                   charge_separations, 
                   'Charge separation', 
                   'Electric potential')
-'''
+```
 
+<!-- REFACTORED (Needs testing)
 from math import pi, log
 
 # Define constants.
@@ -33,3 +41,4 @@ def madelung_1D(z, d):
     return (-2 * N_A * log(2) * (z**2) * (E**2)) / (4 * PI * EPSILON_0 * d)
 
 print(madelung_1D(1,1))
+-->
