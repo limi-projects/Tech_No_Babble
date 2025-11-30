@@ -27,7 +27,7 @@ This involves identifying facets and motifs within images:
 - _Image classification_: identify and categorise an image.
 - _Object detection_: finding a particular object within an image.
   
-_Semantic segmentation_ is a more advanced form of computer vision that involves assigning each pixel of an image to a class. 
+_Semantic segmentation_ is a more advanced form of computer vision that involves assigning each pixel in an image to a class. 
 This allows for more fine-grained identifications.
 
 Applications include:
