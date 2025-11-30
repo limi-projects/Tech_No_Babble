@@ -1,21 +1,19 @@
 # PowerShell
-PowerShell (PS) is a command line shell and scripting language.
+PowerShell (PS) is a command-line shell and scripting language.
 
-Instead of being a strictly compile/interpreted language, powershell compiles to an _abstract syntax tree_ (AST) which checks your code first before running it. It does not create an executable like compiled languages, nor does it interpret line-by-line like an interpreted language.
+Instead of being a strictly compile/interpreted language, PowerShell compiles to an _abstract syntax tree_ (AST), which checks your code first before running it. It does not create an executable like compiled languages, nor does it interpret line-by-line like an interpreted language.
 
-It is case insensitive.
-
-Notably, PS is insensitive to data types when piping. All i/o is text based, so fewer formatting operations are necessary.
+It is case-insensitive and is insensitive to data types when piping. All i/o is text-based, so fewer formatting operations are necessary.
 
 ## Cmdlets
-Commands in PS are called cmdlets (commandlets). These are compiled commands that are built via .NET.
+Commands in PS are called cmdlets (commandlets). These are compiled commands that are built via `.NET`.
 Cmdlets are named according to `verb-noun` syntax.
 - `Get-Verb`: Shows all available verbs.
 - `Get-Command`: Shows all available commands. We can refine this search further via: 
     - `Get-Command -Noun alias*`: Lists all commands with the noun `alias`.
     - `Get-Command -Verb Get -Noun alias*`: Lists all commands with the verb `Get` and the noun `alias`.
 - `Get-Help`: Displays helpful information. 
-    - For specific cmdlets we can use `Get-Help <cmdlet>`.
+    - For specific cmdlets, we can use `Get-Help <cmdlet>`.
     - Use `Update-Help` to update the documentation.
     - Altenatively, use `Get-Help <cmdlet> -Online` to view up-to-date help online. 
 
@@ -79,13 +77,13 @@ Get-Process | Sort-Object -Descending -Property Name, CPU
 Get-Process explorer | Get-Member | Sort-Object -Property @{Expression = "MemberType"; Descending = $True}
 ```
 
-### Vieiwing Running Processes
+### Viewing Running Processes
 The `Get-Process` command lists all of the processes that are running on the machine. `Get-Process -Name 'explorer'` filters that list to processes named "explorer". Thus, `Get-Member` elaborates on the `Get-Process` output.
 
 ## Best Practice: Filtering left, Formatting Right.
 For efficiency, it is best to filter as early as possible in a pipeline, to minimise the data being handled.
 
-In addition, it is better to format data at the end of a pipeline, to ensure that no data is lost/misinterpreted during the formatting process. E.g.:
+In addition, it is better to format data at the end of a pipeline to ensure that no data is lost/misinterpreted during the formatting process. E.g.:
 
 ```powershell
 Get-Process | Select-Object Name | Where-Object Name -eq explorer
@@ -94,7 +92,7 @@ is less efficient than
 ```powershell
 Get-Process -Name explorer | Select-Object Name
 ```
-because filerting to the "Name" column is occurring earlier in the pipeline.
+because filtering to the "Name" column is occurring earlier in the pipeline.
 
 Another example: Never pipe `Select-Object` after `Format-List` as it returns an empty list. This is because the outputs of a formatted list are _properties_, not objects.
 
@@ -116,7 +114,7 @@ Write-Output 'Hello World!'
 Scripts may be run using `.\<ScriptName>.ps1`.
 
 ### Execution Policies
-As a safety feature, Windows sets a _restrcited execution policy_ that prevents scripts from running. To temporarily disable this for the current session, use:
+As a safety feature, Windows sets a _restricted execution policy_ that prevents scripts from running. To temporarily disable this for the current session, use:
 ```powershell
 Set-ExecutionPolicy Unrestricted -Scope Process
 ```
@@ -142,7 +140,7 @@ Write-Output "Hello $name!"
 ```
 
 ## Strings
-Strings can be defined via `'` or `"`. However, `"` are needed to _intepolate_ (interpret and display) variables within a string. In other words `'` defines a _string literal_.
+Strings can be defined via `'` or `"`. However, `"` are needed to _interpolate_ (interpret and display) variables within a string. In other words `'` defines a _string literal_.
 
 ```powershell
 $name = 'Limi'
@@ -176,22 +174,22 @@ Parameters can be declared within a script to add further inputs.
 Param($Name)
 Write-Host "Hello $name"
 ```
-which can then be called and supplied values via:
+Which can then be called and supplied values via:
 ```powershell
 .\TestScript.ps1 -Name Limi
 
 # Output: Hello Limi
 ```
 
-### Default Paramters
-These can be provided as variable assignment.
+### Default Parameters
+These can be provided as variable assignments.
 ```powershell
 Param($Name = 'Limi')
 Write-Host "Hello $name"
 ```
 
 ### Verifying parameter validity.
-To ensure that the parameter is used correctly (e.g. correct data types supplied) you should use conditional statements to catch error cases.
+To ensure that the parameter is used correctly (e.g. correct data types supplied), you should use conditional statements to catch error cases.
 ```powershell
 Param($Name)
 if (-Not $Name -eq ''){Write-Host "Hello $name"}
@@ -297,7 +295,7 @@ $i = 'a'
 Try{Write-Output "$(1+$i)"} 
 Catch [System.Management.Automation.RuntimeException] {Write-Output "INVALID"}
 ```
-To catch multiple errors use multiple catch statements.  
+To catch multiple errors, use multiple catch statements.  
 
 #### Finding Error Codes
 ```powershell
@@ -309,7 +307,7 @@ Catch {Write-Host "Exception Type:" $_.Exception.GetType().FullName}
 ```
 
 ### Try-Catch-Finally Statements
-Finally statements run regardless of whether or not an error has occurred.
+Finally, statements run regardless of whether or not an error has occurred.
 ```powershell
 $i = 'a'
 Try {Write-Output "$(1+$i)"} 
