@@ -134,7 +134,7 @@ https://learn.microsoft.com/en-us/training/paths/github-foundations/
 ## Technobabble
 - Version control system (VCS): Tracks changes to files.
 - Source/Software control management (SCM): Same as VCS.
-- Software configuration management (SCM): A wider term that considers all process changes such as build, packaging, etc (i.e. not just file changes).
+- Software configuration management (SCM): A wider term that considers all process changes. For example: build, packaging, etc (i.e. not just file changes).
 - Working tree: All files and directories that fall within the scope of the version-controlled project.
 - Repository (repo): Contains the data and history for the project. 
 - Bare repo: A repo that is not part of a working tree. Usually a directory ending in ```.git```. It is usually used for backup/sharing.
