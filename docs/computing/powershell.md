@@ -1,5 +1,5 @@
 # PowerShell
-PowerShell (PS) is a command-line shell and scripting language.
+PowerShell (PS or pwsh) is a command-line shell and scripting language.
 
 Instead of being a strictly compile/interpreted language, PowerShell compiles to an _abstract syntax tree_ (AST), which checks your code first before running it. It does not create an executable like compiled languages, nor does it interpret line-by-line like an interpreted language.
 
