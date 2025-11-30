@@ -37,7 +37,6 @@ Use `Format-List` or `Format-Table`.
 Get-Process explorer | Format-List -Property *
 ```
 
-
 ```powershell
 # Shows all _explorer_ object outputs beginning with "S".
 Get-Process explorer | Get-Member -Name S*
@@ -51,7 +50,6 @@ is more nicely formatted than
 ```powershell
 Get-Process -Name explorer | Get-Member P*
 ```
-
 
 #### Filtering Output
 The `Select-Object` cmdlet can be used to filter columns from the `Get-Member` output. 

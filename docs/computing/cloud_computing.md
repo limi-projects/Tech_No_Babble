@@ -1,5 +1,5 @@
 # Cloud Computing
-Cloud computing uses the inernet to deliver computer services such as virtual machines, stroage, databases, networks, Internet of things , machine learning and AI.
+Cloud computing uses the inernet to deliver computer services such as virtual machines, stroage, databases, networks, Internet of Things (IoT), machine learning and AI.
 
 The advantages are that you do not need to and manage the physical hardware and infratructure to run your business. You can simply "rent" more resources from the provider if your business needs expand and vice versa.
 

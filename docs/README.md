@@ -5,19 +5,27 @@ The aim is to communicate ideas in plain English, with as little technical jargo
 
 If necessary, jargon is listed in the _Technobabble_ section at the bottom of each page.
 
+## Disciplines
 | Discipline | Description
 |---|---|
 | [Chemistry](chemistry/README.md) | The study of matter and its properties.
 | [Computing](computing/README.md) | The study of computer software and hardware.
 | [Mathematics](mathematics/README.md) | The study of numbers, geometry and logic.
+
+## Projects
+| Project | Description | Relevant Disciplines |
+-|-|-
+| [Monte Carlo Simulations](mathematics/monte_carlo.md) | Estimating the value of ${\pi}$ using the Monte-Carlo method. | Python |
+
+
 <!--
 ## Miscellaneous Projects
 A collection of projects that use the above information. 
 
-| Project | Description | Relevant Disciplines |
+
 |---|---|---|
 | Alarm Clock | A raspberry-pi pico controlled alarm clock. | Python |
-| Monte Carlo | Estimating the value of ${\pi}$ using the Monte-Carlo method. | Python |
+
 | Permutator | A permutation creation and filtering script. | Python |
 
 | [History](history) | The study of past events.
