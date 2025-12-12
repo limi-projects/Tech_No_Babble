@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello World!</title>
+    <style>
+      div {
+        position: absolute;
+        width: 40%;
+        height: 40%;
+        border: 5px solid red;
+        margin 1px;
+      }
+
+      div#E1 {
+        float: left;
+        left: 0px;
+        top: 0px;
+        background-color: red;
+        z-index: 1;
+      }
+      
+      div#E2 {
+        float: right;
+        left: 300px;
+        top: 0px;
+        background-color: blue;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="E1">1</div>
+    <div id="E2">2</div>
+  </body>
+</html>

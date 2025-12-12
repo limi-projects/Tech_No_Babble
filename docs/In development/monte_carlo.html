@@ -1,0 +1,49 @@
+<!--Setup an interactive webpage to demonstrate the MonteCarlo method-->
+<!--
+TODO:
+- LINK JS TO EXTERNAL FILE.
+- SETUP HTML-JS input and output.
+- Add description and contents.
+- Style Page
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Monte Carlo Method</title>
+  </head>
+  <body>
+    
+    <script>
+      function estimate_pi(samples){
+      // Estimate the value of pi using a Monte Carlo simulation.
+
+      function get_samples(n){
+          //Get a set of random samples within the range 0-1.
+          let a = []
+          for (i = 0; i <= n; i++){a[i] = Math.random()}
+          return a
+      }
+
+      // Get a uniform distribution of random x and y coordinates.
+      let x = get_samples(samples); let y = get_samples(samples)
+
+      // Count the number of coordinates inside the quadrant via the Pythagorean Theorem.
+      inside = 0
+      for (i = 0; i <= x.length - 1; i++){
+          if (x[i]**2 + y[i]**2 <= 1){inside += 1}
+      }
+
+      // Get the proportion of samples inside the quadrant.
+      // Multiply the result by 4.
+      estimate = (inside/samples)*4
+
+      // Return the estimate of pi.
+      return estimate
+      }
+      
+      //NB: CHANGE THIS TO DISPLAY IN-PAGE
+      alert(estimate_pi(1000000))
+    </script>
+  </body>
+</html>
