@@ -1,9 +1,7 @@
 # Tech, No Babble 
 A study record maintained for personal reference.
 
-The aim is to communicate ideas in plain English, with as little technical jargon as possible.
-
-If necessary, jargon is listed in the _Technobabble_ section at the bottom of each page.
+Jargon is minimised and clarified in the _Technobabble_ sections where possible.
 
 ## Disciplines
 | Discipline | Description
@@ -16,10 +14,6 @@ If necessary, jargon is listed in the _Technobabble_ section at the bottom of ea
 | Project | Description | Relevant Disciplines |
 -|-|-
 | [Monte Carlo Simulations](mathematics/monte_carlo.md) | Estimating the value of ${\pi}$ using the Monte-Carlo method. | Python |
-
-## TEST
-[Test Link](https://raw.githubusercontent.com/limi-projects/Tech_No_Babble/refs/heads/main/docs/In%20development/monte_carlo.html)
-
 
 <!--
 ## Miscellaneous Projects
