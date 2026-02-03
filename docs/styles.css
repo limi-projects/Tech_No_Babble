@@ -1,6 +1,97 @@
-body {
-  font-family: Courier;
-  font-size: 12pt;
-  color: white;
-  background-color: black;
+header, footer {
+  background-color: grey;
+  width: 100%;
 }
+
+h1 {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+nav {
+  text-align: left;
+  text-align: center;
+}
+
+select {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: grey;
+  font-size: 12pt;
+  color: black;
+  border: grey;
+}
+
+nav select:hover {
+  background-color: whitesmoke;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: whitesmoke;
+}
+
+p {
+  text-align: justify;
+}
+
+/*Style navbar list items*/
+li.topics {display: inline; width: max-content}
+li.chemistry {width: max-content}
+li.computing {width: max-content}
+li.mathematics {width: max-content}
+li.physics {width: max-content}
+
+/*Reveal navbar lists on hover*/
+li.topics:hover ul.topics {display: block}
+li.chemistry:hover ul.chemistry {display: block}
+li.computing:hover ul.computing {display: block}
+li.mathematics:hover ul.mathematics {display: block}
+li.physics:hover ul.physics {display: block}
+
+/*Style the top-level navbar list*/
+li.header-lvl {display: inline;}
+ul.header-lvl {display: inline; list-style: none;}
+
+/*Style and hide navbar lists*/
+ul.topics {display: none; list-style: none;}
+ul.chemistry {display: none}
+ul.computing {display: none;}
+ul.mathematics {display: none;}
+ul.physics {display: none;}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 12pt;
+  color: black;
+  background-color: whitesmoke;
+}
+
+article {
+  left: 0%;
+  width: 100%;
+}
+
+aside.python {
+  border: 1px solid black;
+  width: 100%;
+}
+
+aside.javascript {
+  border: 1px solid black;
+  width: 100%;
+}
+
+aside.csharp {
+  border: 1px solid black;
+  width: 100%;
+}
+
+thead th {
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+}
+

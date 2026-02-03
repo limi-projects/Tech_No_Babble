@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tech, No Babble</title>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <strong>Tech, No Babble</strong>
+
+        <ul class="header-lvl">
+          <li class="topics"><a href="#">Topics</a>
+            <ul class="topics">
+              <li class="chemistry"><a href="#">Chemistry</a>
+                <ul class="chemistry">
+                  <li><a href="#">Alkanes</a></li>
+                </ul>
+              </li>
+              <li class="computing"><a href="#">Computing</a>
+                <ul class="computing">
+                  <li><a href="#">Software</a></li>
+                  <li><a href="#">Hardware</a></li>
+                </ul>
+              </li>
+              <li class="mathematics"><a href="#">Mathematics</a>
+                <ul class="mathematics">
+                  <li><a href="#">The Monte Carlo Method</a></li>
+                </ul>
+              </li>
+              <li class="physics"><a href="#">Physics</a>
+                <ul class="physics">
+                  <li><a href="#">Motion</a></li>
+                  <li><a href="#">Quantum Mechanics</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <article>
+
+        <h1>The Monte Carlo Method</h1>
+        
+        <p>
+          Monte Carlo simulations use random selection to aproach an accurate solution. Since the sampling is randomised, the accuracy of a Monte Carlo simulation increases with the number of samples at the cost of an increased computational load.
+        </p>
+
+        <p>
+          Strictly speaking, <em>pseudo</em>-random selection is normally used in the Monte Carlo method, since a traditional computer is incapable of generating truly random numbers.
+        </p>
+
+        <h2>Demonstration: Estimating Pi</h2>
+
+        <p>
+          The value of ${\pi}$ can be estimated using the Monte Carlo method:
+          <ol>
+            <li>
+              Consider a circle with a radius of ${r}$, bounded by a square. 
+              The ratio of the area of the circle and the area of the square must therefore be:
+              ${\frac{\pi r^{2}}{4r^{2}} = \frac{\pi}{4}}$.
+            </li>
+            <li>
+              Symmetry reduce the problem to a quadrant, enclosed by a smaller square of width r. 
+              The ${\frac{\pi}{4}}$ ratio still holds in this configuration.
+            </li>
+            <li>
+              Consider that the circle and square are centred about an origin (0,0) and that ${r=1}.
+            </li>
+            <li>
+              Sample randomly within this space, recording the coordinates.
+            </li>
+            <li>
+              Via the Pythagorean theorem (${a^{2} + b^{2} = c^{2}}$). Samples that have a disance from the origin of less than, or equal to, 1 must be within the quadrant. Categorise each sample accordingly. 
+            </li>
+            <li>
+              Divide the number of samples within the quadrant by the total number of samples. This is performing the same circle/square division calculation as above, albeit using pointwise sampling of the area.
+            </li>
+            <li>
+              Multiply the result by 4, to estimate ${\pi}$.
+            </li>
+          </ol>
+        </p>        
+      </article>
+    </section>
+    <footer>
+      <nav>
+        <ul>
+          <li>Technobabble</li>
+          <li>GitHub Source</li>
+          <li>Comment</li>
+        </ul>
+      </nav>
+    </footer>
+    <script>
+      //(alert("Test Alert!"))()
+    </script>
+  </body>
+</html>
